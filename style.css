@@ -1,17 +1,19 @@
 .menu {
-    top: 2%;
+
     position: absolute;
     right: 3%;
-    top: 7%;
+    top: 5%;
 }
 h1 {
-  color: #4c4747;
-  position: static;
-  display: block;
-  top: 0;
-  font-size: 59px;
-  text-align: center;
-  font-family: 'Pacifico', cursive;
+    color: #4c4747;
+    font-size: 59px;
+    font-family: 'Pacifico', cursive;
+    display: table-caption;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
 }
 div.search {
   display: table-caption;
