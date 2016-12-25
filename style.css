@@ -24,22 +24,21 @@ div.search {
   transform: translate(-50%, -50%);
 }
 textarea#s {
-    opacity: 1;
-
-    /* position: absolute; */
-    color: #565863;
-    border-radius: 3px;
-    padding: 30px;
-        font-family: 'Kalam', cursive;
-    border: 0px solid;
-    text-align: center;
-    width: 400px;
-    height: 400px;
-    font-size: 45px;
-    background-color: rgba(222, 222, 222, 0.85);
-    -webkit-box-shadow: 3px 5px 13px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 5px 13px -4px rgba(0,0,0,0.75);
-    box-shadow: 3px 5px 13px -4px rgba(0,0,0,0.75);
+  opacity: 1;
+  /* position: absolute; */
+  color: #e4e6ef;
+  border-radius: 3px;
+  padding: 30px;
+  font-family: 'Kalam', cursive;
+  border: 0px solid;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  font-size: 45px;
+  background-color: rgba(22, 61, 171, 0.77);
+  -webkit-box-shadow: 3px 5px 13px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 5px 13px -4px rgba(0,0,0,0.75);
+  box-shadow: 3px 5px 13px -4px rgba(0,0,0,0.75);
 }
    textarea:focus, input:focus
    {
@@ -64,3 +63,57 @@ textarea#s {
      transition: opacity 0.5s 0s ease;
      opacity: 0;
    }
+
+   .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+       color: rgb(255,255,255);
+       background-color: #4CAF50;
+   }
+
+
+
+   @media only screen
+     and (min-device-width: 0px)
+     and (max-device-width: 480px)
+     and (-webkit-min-device-pixel-ratio: 2)
+     and (orientation: portrait)
+   	{
+
+      h1 {
+          color: #4c4747;
+          font-size: 99px;
+          font-family: 'Pacifico', cursive;
+          display: table-caption;
+          position: fixed;
+          top: 5%;
+          left: 50%;
+          text-align: center;
+          transform: translate(-50%, -50%);
+      }
+      textarea#s {
+          opacity: 1;
+          /* position: absolute; */
+          color: #e4e6ef;
+          border-radius: 3px;
+          padding: 30px;
+          font-family: 'Kalam', cursive;
+          border: 0px solid;
+          text-align: center;
+          width: 900px;
+          height: 1000px;
+          font-size: 85px;
+          background-color: rgba(22, 61, 171, 0.77);
+          -webkit-box-shadow: 3px 5px 13px -4px rgba(0,0,0,0.75);
+          -moz-box-shadow: 3px 5px 13px -4px rgba(0,0,0,0.75);
+          box-shadow: 3px 5px 13px -4px rgba(0,0,0,0.75);
+      }
+      .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+          color: rgb(255,255,255);
+          width: 100px;
+          background-color: #4CAF50;
+          height: 60px;
+      }
+      .mdl-button .material-icons {
+    vertical-align: middle;
+    font-size: 35px;
+}
+    }
