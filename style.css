@@ -1,9 +1,71 @@
+body {
+    margin: 0;
+    background: url(bgl.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
 .menu {
 
     position: absolute;
     right: 3%;
     top: 5%;
 }
+
+.colorBar {
+    margin: 10px;
+    opacity: 0;
+}
+.mdl-button--fab.mdl-button--mini-fab {
+    height: 30px;
+    min-width: 30px;
+    width: 30px;
+}
+
+.mdl-button--fab.mdl-button--colored {
+    background: rgb(255,64,129);
+    color: #9C27B0;
+    /* width: 10px; */
+    webkit-box-shadow: 3px 5px 13px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 5px 13px -4px rgba(0,0,0,0.75);
+    box-shadow: 3px 5px 13px -4px rgba(0,0,0,0.75);
+}
+button#red {
+    color: white;
+    font-size: 12px;
+    background: #f44336;
+}
+button#yellow {
+    color: whiter;
+    font-size: 12px;
+    background: #efd918;
+}
+button#blue {
+    color: white;
+    font-size: 12px;
+    background: rgba(22, 61, 171, 0.77);
+}
+button#green {
+    color: white;
+    font-size: 12px;
+    background: #4caf50;
+}
+button#brown {
+    color: white;
+    font-size: 12px;
+    background: #929a83;
+}
+button#preview {
+    background: #607D8B;
+}
+
+
+.mdl-button--fab.mdl-button--colored {
+    background: rgb(255,64,129);
+    border: 2px solid;
+    color: rgb(255,255,255);
+}
+
 h1 {
     color: #4c4747;
     font-size: 59px;
@@ -15,27 +77,27 @@ h1 {
     text-align: center;
     transform: translate(-50%, -50%);
 }
-div.search {
+div.note {
   display: table-caption;
-  position: fixed;
-  top: 50%;
+  position: absolute;
+  top: 55%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
 }
-textarea#s {
+textarea#text {
   opacity: 1;
   /* position: absolute; */
-  color: #e4e6ef;
+  color: white;
   border-radius: 3px;
   padding: 30px;
   font-family: 'Kalam', cursive;
   border: 0px solid;
-  text-align: center;
-  width: 400px;
-  height: 400px;
+  text-align: justify;
+  width: 350px;
+  height: 350px;
   font-size: 45px;
-  background-color: rgba(22, 61, 171, 0.77);
+  background-color: rgb(146, 154, 131);
   -webkit-box-shadow: 3px 5px 13px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 5px 13px -4px rgba(0,0,0,0.75);
   box-shadow: 3px 5px 13px -4px rgba(0,0,0,0.75);
@@ -89,7 +151,7 @@ textarea#s {
           text-align: center;
           transform: translate(-50%, -50%);
       }
-      textarea#s {
+      textarea#text {
           opacity: 1;
           /* position: absolute; */
           color: #e4e6ef;
@@ -116,4 +178,13 @@ textarea#s {
     vertical-align: middle;
     font-size: 35px;
 }
+
+.mdl-button--fab.mdl-button--mini-fab {
+    height: 70px;
+    min-width: 30px;
+    width: 70px;
+    margin: 6px;
+}
+
+
     }

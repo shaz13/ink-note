@@ -1,29 +1,58 @@
 <html>
 <head>
 <title>Ink Note</title>
-<link href="https://fonts.googleapis.com/css?family=Kalam:300|Roboto:300,400" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="html2canvas.js"></script>
+<script src="script.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Kalam:300|Roboto:300,400" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 <script src="jquery.inputfit.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.css" />
-<script src="script.js"></script>
+
 </head>
 <body>
 <h1>Ink Note</h1>
 <div class="menu">
   <span id=tools>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-    <i class="material-icons">save</i>
+    <button id="preview" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+    <i class="material-icons">info</i>
   </button>
+  <button id="download" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  <i class="material-icons">file_download</i>
+</button>
   </span>
 </div>
-<div class="search">
+<div class="note">
 
-  <textarea id="s" type="text"  placeholder="Note" autocorrect="off"  autocomplete="off" autocapitalize="off"/></textarea>
+  <textarea id="text" class="" type="text"  placeholder="" autocorrect="off"  autocomplete="off" autocapitalize="off"/></textarea>
+  <div class="colorBar">
+    <span id="coloropt">
+      <button id="red" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-js-ripple-effect">
+      <i class="material-icons">red</i>
+    </button>
+    <button id="yellow" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-js-ripple-effect">
+    <i class="material-icons">yellow</i>
+  </button>
+  <button id="blue" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-js-ripple-effect">
+  <i class="material-icons">blue</i>
+  </button>
+  <button id="green" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-js-ripple-effect">
+  <i class="material-icons">green</i>
+  </button>
+  <button id="brown" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-js-ripple-effect">
+  <i class="material-icons">green</i>
+  </button>
+    </span>
+  </div>
+
+
 </div>
+
+<div id="img-out"></div>
 
 
 </body>
