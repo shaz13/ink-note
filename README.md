@@ -3,6 +3,6 @@ A minimalistic material note taking web application which stores notes as cards 
 
 ![Alt text](ink.jpg?raw=true "Ink Note")
 
-Currently in developement
+Currently in developemen. Preview at https://shaz13.github.io/ink-note/
 
 Peace.
